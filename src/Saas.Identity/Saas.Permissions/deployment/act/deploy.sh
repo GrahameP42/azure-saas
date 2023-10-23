@@ -32,11 +32,16 @@ docker run \
     bash /asdk/src/Saas.Lib/Deployment.Script.Modules/deploy-debug.sh
 
 # run act container to run github action locally, using local workflow file and local code base.
-gh act workflow_dispatch \
-    --rm \
-    --bind \
-    --pull=false \
-    --secret-file "${host_act_secrets_dir}/secret" \
-    --directory "${REPO_BASE}" \
-    --workflows "${ACT_LOCAL_WORKFLOW_DEBUG_FILE}" \
-    --platform "ubuntu-latest=${ACT_CONTAINER_NAME}"
+
+ gh act run workflow_dispatch \
+     --rm \
+	 --bind \
+     --pull=false \
+     --secret-file "${host_act_secrets_dir}/secret" \
+     --directory "${REPO_BASE}" \
+     --workflows "${ACT_LOCAL_WORKFLOW_DEBUG_FILE}" \
+     --platform "ubuntu-latest=${ACT_CONTAINER_NAME}"
+
+
+#     gh run workflow_dispatch \
+#     --rm \

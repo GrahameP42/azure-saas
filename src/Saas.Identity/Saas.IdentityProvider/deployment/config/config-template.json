@@ -1,17 +1,17 @@
 { 
   "initConfig": {
-    "userPrincipalId": "",
-    "subscriptionId": "",
-    "tenantId": "",
-    "location": "",
+    "userPrincipalId": "7d4d633d-7ef7-4f6b-b773-7b9d12b89eae",
+    "subscriptionId": "fc4ec11d-9b33-4b14-b583-acb9072f5f31",
+    "tenantId": "25818bcb-a949-4dbf-bc8b-4f62dd5f3607",
+    "location": "australiaeast",
     "naming": {
       "solutionPrefix": "asdk",
       "solutionName": "test"
     },
     "azureb2c": {
-      "location": "Europe",
-      "countryCode": "DK",
-      "skuName": "PremiumP1",
+      "location": "australiaeast",
+      "countryCode": "AU",
+      "skuName": "Standard",
       "tier": "A0"
     }
   },
